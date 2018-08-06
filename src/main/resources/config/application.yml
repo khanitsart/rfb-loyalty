@@ -45,15 +45,31 @@ spring:
     thymeleaf:
         mode: XHTML
 
+    social:
+        facebook:
+            app-id: 277278222820538
+            app-secret: f3a11cff17b69433f40641612357f4fa
+
+        twitter:
+            app-id: ZUlk6lJQQuUFuudt2H8SnjWNY
+            app-secret: DPlzffE19XRsBCho26pSh8suOemgowcw0Ic0LfZTiJ44z0AoF3
+
 security:
     basic:
         enabled: false
 
+
 server:
+    port: 8443
     session:
         cookie:
             http-only: true
 
+    ssl:
+        key-store: keystore.p12
+        key-store-password: changeit
+        keyStoreType: PKCS12
+        keyAlias: tomcat
 info:
     project:
         version: #project.version#

@@ -30,6 +30,7 @@ public class RfbEventCodeService {
         this.rfbEventRepository = rfbEventRepository;
     }
 
+    //code ตรงนี้จะ run schedule เหมืออน quatz
     @Scheduled(cron = "0 0 * * * ?") //run once per hour, at top of hour
     //@Scheduled(cron = "0 * * * * ?") //run once per min
     //@Scheduled(cron = "* * * * * ?") //run once per sec
