@@ -10,7 +10,7 @@ services:
             - SPRING_DATASOURCE_PASSWORD=devmonster
         ports:
             - 8080:8080
-    #rfbloyalty-mysql:
-    #    extends:
-     #       file: mysql.yml
-     #       service: rfbloyalty-mysql
+    rfbloyalty-mysql:
+        extends:
+           file: mysql.yml
+          service: rfbloyalty-mysql

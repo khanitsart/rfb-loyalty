@@ -21,9 +21,9 @@ spring:
             enabled: false
     datasource:
         type: com.zaxxer.hikari.HikariDataSource
-        url: jdbc:mysql://localhost:3306/rfbloyalty?useUnicode=true&characterEncoding=utf8&useSSL=false
-        username: root
-        password:
+        url: jdbc:mysql://rfbloyalty.c9jltpi8gf6l.ap-southeast-1.rds.amazonaws.com:3306/loyaltydb?useUnicode=true&characterEncoding=utf8&useSSL=false
+        username: devmonster
+        password: devmonster
         hikari:
             data-source-properties:
                 cachePrepStmts: true
