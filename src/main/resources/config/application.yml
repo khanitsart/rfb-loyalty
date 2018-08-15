@@ -60,7 +60,7 @@ security:
 
 
 server:
-    port: 8443
+    #port: 8443
     session:
         cookie:
             http-only: true
