@@ -65,11 +65,11 @@ server:
         cookie:
             http-only: true
 
-    ssl:
-        key-store: keystore.p12
-        key-store-password: changeit
-        keyStoreType: PKCS12
-        keyAlias: tomcat
+    #ssl:
+     #   key-store: keystore.p12
+      #  key-store-password: changeit
+       # keyStoreType: PKCS12
+        #keyAlias: tomcat
 info:
     project:
         version: #project.version#
