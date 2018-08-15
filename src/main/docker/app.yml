@@ -1,16 +1,16 @@
 version: '2'
 services:
     rfbloyalty-app:
-        image: springframeworkguru/rfbloyalty
+        image: devmonster/rfbloyalty
         environment:
             - SPRING_PROFILES_ACTIVE=prod,swagger
-            - SPRING_DATASOURCE_URL=jdbc:mysql://rfbloyalty-mysql:3306/rfbloyalty?useUnicode=true&characterEncoding=utf8&useSSL=false
-            - SPRING_JPA_HIBERNATE_DDL_AUTO=update
-            - SPRING_DATASOURCE_USERNAME=
-            - SPRING_DATASOURCE_PASSWORD=
+            - SPRING_DATASOURCE_URL=jdbc:mysql://rfbloyalty.c9jltpi8gf6l.ap-southeast-1.rds.amazonaws.com:3306/loyaltydb?useUnicode=true&characterEncoding=utf8&useSSL=false
+            - SPRING_JPA_HIBERNATE_DDL_AUTO=validate
+            - SPRING_DATASOURCE_USERNAME=devmonster
+            - SPRING_DATASOURCE_PASSWORD=devmonster
         ports:
             - 8080:8080
-    rfbloyalty-mysql:
-        extends:
-            file: mysql.yml
-            service: rfbloyalty-mysql
+    #rfbloyalty-mysql:
+    #    extends:
+     #       file: mysql.yml
+     #       service: rfbloyalty-mysql
